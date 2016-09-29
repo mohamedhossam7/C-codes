@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <conio.h>
+
+
+
+struct E_7 
+{
+	int id;
+	char *name ;
+	float grade;
+	char *add ;
+	
+	struct task task1;
+	
+};
+
+struct task
+{
+	int task_id;
+	char *task_name;
+	
+};
+
+
+
+int main ()
+
+{
+	struct E_7 Mohamed;
+	
+	Mohamed.id = 7;
+	Mohamed.name = "mohamed hossam";
+	Mohamed.grade = 55.7;
+	Mohamed.add = "hshdjshsh";
+	
+	Mohamed.task1.task_id = 2;
+	Mohamed.task1.task_name = "struct";
+	
+	
+	printf("Mohamed id: %i\n", Mohamed.id);
+	printf("Mohamed name: %s\n", Mohamed.name);
+	printf("Mohamed grade: %0.3f\n", Mohamed.grade);
+	printf("Mohamed add: %s\n", Mohamed.add);
+	printf("Mohamed task1 id: %i\n", Mohamed.task1.task_id);
+	printf("Mohamed task1 name: %s\n", Mohamed.task1.task_name);
+	
+}

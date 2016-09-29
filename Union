@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <conio.h>
+
+union E_7
+{
+	int id;
+	char name;
+	
+};
+
+union E_7 st1;
+
+
+int main()
+
+{
+	st1.id = 5;
+	printf("%i\n",st1.id);
+
+	st1.name = 'a';
+	printf("%c\n",st1.name);
+	
+	printf("%i\n",st1.id);
+	
+	
+	
+}

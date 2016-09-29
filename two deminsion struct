@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <conio.h>
+
+struct E7
+{
+	int id;
+	char name [10];
+};
+
+struct E7 data [2] [2];
+
+int i = 0, j = 0;
+int main ()
+
+{
+	for ( i = 0; i < 2; i++ )
+	{ 
+	
+	
+	for ( j = 0; j < 2; j++ )
+	{
+		printf ("Enter [%i] [%i] id: ", i, j);
+		scanf ("%i",&data [i] [j].id);
+		
+		printf ("Enter [%i] [%i] name: ", i, j);
+		fflush (stdin);
+		gets (data [i] [j].name);
+		printf ("------------------------\n");
+	}
+	
+	
+	}
+	printf ("------------------------\n");
+	
+		for ( i = 0; i < 2; i++ )
+	{ 
+	
+	
+	for ( j = 0; j < 2; j++ )
+	{
+		printf ("[%i] [%i] id: %i", i, j, data [i] [j].id);
+		
+		printf ("[%i] [%i] name: %s", i, j, data [i] [j].name);
+		
+		printf ("------------------------\n");
+	}
+	
+	
+	}
+	
+}

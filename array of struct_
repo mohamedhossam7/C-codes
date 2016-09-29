@@ -1,0 +1,37 @@
+#include <stdio.h>
+#unclude <conio.h>
+
+
+struct E_7 
+{
+	int id;
+	char *name;	
+	
+};
+
+struct E_7 G2 [3];
+
+int count = 0;
+
+int main()
+
+{
+	for (count = 0; count < 3; count++)
+	{
+		printf("enter student [%i] id: ",count);
+		scanf("%i",&G2 [count].id);
+		printf("\nenter student [%i] name: ",count);
+		fflush(stdin);
+		gets(G2 [count].name);
+		
+	}
+	
+for (count = 0; count < 3; count++)
+	{
+		printf("\nstudent [%i] id: \n",G2 [count].id);
+		printf("student [%i] name: \n",G2 [count].name);
+		
+	}	
+	
+	
+}

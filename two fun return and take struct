@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <conio.h>
+
+
+struct E_7
+{
+	int id;
+	char *name;
+	float grade;
+	char *add;
+	
+};
+
+struct E_7 addData ();
+void printData (struct E_7);
+
+int main()
+
+{
+	printData(addData());
+	
+	
+}
+
+struct E_7 addData ()
+{
+	struct E_7 st1;
+	
+	printf("Enter student id: ");
+	scanf("%i",&st1.id);
+	printf("\nEnter student name: ");
+	fflush(stdin);
+	gets(st1.name);
+	printf("\nEnter student grade: ");
+	scanf("%f",&st1.grade);
+	printf("\nEnter student address: ");
+	fflush(stdin);
+	gets(st1.add);
+	
+	return st1;
+	
+	
+}
+
+void printData (struct E_7 st)
+{
+	
+	printf("\nstudent id: %i\n",st.id);
+	printf("student name: %s\n",st.name);
+	printf("student grade: %.03f\n",st.grade);
+	printf("student address: %s\n",st.add);
+}
