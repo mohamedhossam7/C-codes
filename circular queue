@@ -41,7 +41,7 @@ int outData ()
 		int tmp = 0;
 		tmp = arr[out];
 		out = (out+1) % MAX_Q;
-		return temp;
+		return tmp;
 	}
 	
 };
